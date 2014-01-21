@@ -6,6 +6,7 @@ int main(void) {
 	NSData *fileData;
 
 	fileManager = [NSFileManager defaultManager];
+	fileData = fileManager contentsAtPath:@"read_file.m";
 
 	return 0;
 }
