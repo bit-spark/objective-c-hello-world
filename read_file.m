@@ -7,6 +7,7 @@ int main(void) {
 
 	fileManager = [NSFileManager defaultManager];
 	fileData = fileManager contentsAtPath:@"read_file.m";
+	NSString* dataString = [NSString stringWithUTF8String:[fileData bytes]];
 
 	return 0;
 }
