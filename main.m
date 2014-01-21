@@ -6,7 +6,7 @@ int main(void)
 
 	NSDate *now = [NSDate date];
 	NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init]; 
-	[dateFormatter setFormat:@"dd-MM-yyyy"];
+	[dateFormatter setDateFormat:@"dd-MM-yyyy"];
 	NSString *dateString = [dateFormatter stringFromDate:now];
 	
 	NSLog(@"Today's date is %@", dateString);
