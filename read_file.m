@@ -5,5 +5,7 @@ int main(void) {
 	NSData *fileData = fileManager contentsAtPath:@"read_file.m";
 	NSString* dataString = [NSString stringWithUTF8String:[fileData bytes]];
 
+	NSLog(@"File contents = %@", dataString);
+	
 	return 0;
 }
